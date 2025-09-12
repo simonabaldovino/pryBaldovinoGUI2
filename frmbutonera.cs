@@ -57,6 +57,7 @@ namespace pryBaldovinoGUI
             else 
             {
                 btnSiguiente.Enabled = false;
+                MessageBox.Show("El botón ya no se puede usar mas.");
         }
             }
     }
