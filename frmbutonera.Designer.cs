@@ -32,6 +32,8 @@
             btnSiguiente = new Button();
             btnAtras = new Button();
             lblResultado = new Label();
+            cboNombre = new ComboBox();
+            lblNom = new Label();
             SuspendLayout();
             // 
             // lblDatos
@@ -45,7 +47,7 @@
             // 
             // btnSiguiente
             // 
-            btnSiguiente.Location = new Point(186, 124);
+            btnSiguiente.Location = new Point(201, 124);
             btnSiguiente.Name = "btnSiguiente";
             btnSiguiente.Size = new Size(75, 23);
             btnSiguiente.TabIndex = 5;
@@ -55,7 +57,7 @@
             // 
             // btnAtras
             // 
-            btnAtras.Location = new Point(92, 124);
+            btnAtras.Location = new Point(73, 124);
             btnAtras.Name = "btnAtras";
             btnAtras.Size = new Size(75, 23);
             btnAtras.TabIndex = 6;
@@ -72,11 +74,30 @@
             lblResultado.TabIndex = 8;
             lblResultado.Text = "Resultado";
             // 
+            // cboNombre
+            // 
+            cboNombre.FormattingEnabled = true;
+            cboNombre.Location = new Point(138, 201);
+            cboNombre.Name = "cboNombre";
+            cboNombre.Size = new Size(138, 23);
+            cboNombre.TabIndex = 9;
+            // 
+            // lblNom
+            // 
+            lblNom.AutoSize = true;
+            lblNom.Location = new Point(48, 205);
+            lblNom.Name = "lblNom";
+            lblNom.Size = new Size(38, 15);
+            lblNom.TabIndex = 10;
+            lblNom.Text = "label1";
+            // 
             // frmButonera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(350, 200);
+            ClientSize = new Size(350, 299);
+            Controls.Add(lblNom);
+            Controls.Add(cboNombre);
             Controls.Add(lblResultado);
             Controls.Add(btnAtras);
             Controls.Add(btnSiguiente);
@@ -94,5 +115,7 @@
         private Button btnSiguiente;
         private Button btnAtras;
         private Label lblResultado;
+        private ComboBox cboNombre;
+        private Label lblNom;
     }
 }
