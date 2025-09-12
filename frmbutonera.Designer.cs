@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             lblDatos = new Label();
-            lblSiguiente = new Button();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            lblNombre = new Label();
+            btnSiguiente = new Button();
+            btnAtras = new Button();
             lblResultado = new Label();
             SuspendLayout();
             // 
@@ -40,49 +38,35 @@
             // 
             lblDatos.AutoSize = true;
             lblDatos.BorderStyle = BorderStyle.Fixed3D;
-            lblDatos.Location = new Point(104, 154);
+            lblDatos.Location = new Point(105, 56);
             lblDatos.Name = "lblDatos";
             lblDatos.Size = new Size(2, 17);
             lblDatos.TabIndex = 0;
             // 
-            // lblSiguiente
+            // btnSiguiente
             // 
-            lblSiguiente.Location = new Point(185, 222);
-            lblSiguiente.Name = "lblSiguiente";
-            lblSiguiente.Size = new Size(75, 23);
-            lblSiguiente.TabIndex = 5;
-            lblSiguiente.Text = "Siguiente";
-            lblSiguiente.UseVisualStyleBackColor = true;
+            btnSiguiente.Location = new Point(186, 124);
+            btnSiguiente.Name = "btnSiguiente";
+            btnSiguiente.Size = new Size(75, 23);
+            btnSiguiente.TabIndex = 5;
+            btnSiguiente.Text = "Siguiente";
+            btnSiguiente.UseVisualStyleBackColor = true;
+            btnSiguiente.Click += btnSiguiente_Click;
             // 
-            // textBox1
+            // btnAtras
             // 
-            textBox1.Location = new Point(104, 85);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(156, 23);
-            textBox1.TabIndex = 3;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(91, 222);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 6;
-            button1.Text = "Atras";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // lblNombre
-            // 
-            lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(31, 85);
-            lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(51, 15);
-            lblNombre.TabIndex = 7;
-            lblNombre.Text = "Nombre";
+            btnAtras.Location = new Point(92, 124);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(75, 23);
+            btnAtras.TabIndex = 6;
+            btnAtras.Text = "Atras";
+            btnAtras.UseVisualStyleBackColor = true;
+            btnAtras.Click += btnAtras_Click;
             // 
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(31, 154);
+            lblResultado.Location = new Point(32, 56);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(59, 15);
             lblResultado.TabIndex = 8;
@@ -92,12 +76,10 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(350, 375);
+            ClientSize = new Size(350, 200);
             Controls.Add(lblResultado);
-            Controls.Add(lblNombre);
-            Controls.Add(button1);
-            Controls.Add(lblSiguiente);
-            Controls.Add(textBox1);
+            Controls.Add(btnAtras);
+            Controls.Add(btnSiguiente);
             Controls.Add(lblDatos);
             Name = "frmButonera";
             Text = "frmbutonera";
@@ -109,10 +91,8 @@
         #endregion
 
         private Label lblDatos;
-        private Button lblSiguiente;
-        private TextBox textBox1;
-        private Button button1;
-        private Label lblNombre;
+        private Button btnSiguiente;
+        private Button btnAtras;
         private Label lblResultado;
     }
 }
