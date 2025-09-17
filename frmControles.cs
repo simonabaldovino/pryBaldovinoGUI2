@@ -19,8 +19,8 @@ namespace pryBaldovinoGUI
 
         private void btnAbrir_Click(object sender, EventArgs e)
         {
-            frmButonera venta = new frmButonera();
-            venta.Show();
+            frmButonera ventana = new frmButonera();
+            ventana.Show();
         }
     }
 }
