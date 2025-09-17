@@ -31,23 +31,24 @@
             lblDatos = new Label();
             btnSiguiente = new Button();
             btnAtras = new Button();
-            lblResultado = new Label();
             cboNombre = new ComboBox();
             lblNom = new Label();
+            btnUltimo = new Button();
+            btnPrimero = new Button();
             SuspendLayout();
             // 
             // lblDatos
             // 
             lblDatos.AutoSize = true;
             lblDatos.BorderStyle = BorderStyle.Fixed3D;
-            lblDatos.Location = new Point(105, 56);
+            lblDatos.Location = new Point(157, 61);
             lblDatos.Name = "lblDatos";
             lblDatos.Size = new Size(2, 17);
             lblDatos.TabIndex = 0;
             // 
             // btnSiguiente
             // 
-            btnSiguiente.Location = new Point(201, 124);
+            btnSiguiente.Location = new Point(189, 124);
             btnSiguiente.Name = "btnSiguiente";
             btnSiguiente.Size = new Size(75, 23);
             btnSiguiente.TabIndex = 5;
@@ -57,7 +58,7 @@
             // 
             // btnAtras
             // 
-            btnAtras.Location = new Point(73, 124);
+            btnAtras.Location = new Point(108, 124);
             btnAtras.Name = "btnAtras";
             btnAtras.Size = new Size(75, 23);
             btnAtras.TabIndex = 6;
@@ -65,19 +66,10 @@
             btnAtras.UseVisualStyleBackColor = true;
             btnAtras.Click += btnAtras_Click;
             // 
-            // lblResultado
-            // 
-            lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(32, 56);
-            lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(59, 15);
-            lblResultado.TabIndex = 8;
-            lblResultado.Text = "Resultado";
-            // 
             // cboNombre
             // 
             cboNombre.FormattingEnabled = true;
-            cboNombre.Location = new Point(138, 201);
+            cboNombre.Location = new Point(138, 253);
             cboNombre.Name = "cboNombre";
             cboNombre.Size = new Size(138, 23);
             cboNombre.TabIndex = 9;
@@ -85,20 +77,41 @@
             // lblNom
             // 
             lblNom.AutoSize = true;
-            lblNom.Location = new Point(32, 204);
+            lblNom.Location = new Point(32, 256);
             lblNom.Name = "lblNom";
             lblNom.Size = new Size(38, 15);
             lblNom.TabIndex = 10;
             lblNom.Text = "label1";
             // 
+            // btnUltimo
+            // 
+            btnUltimo.Location = new Point(270, 124);
+            btnUltimo.Name = "btnUltimo";
+            btnUltimo.Size = new Size(75, 23);
+            btnUltimo.TabIndex = 11;
+            btnUltimo.Text = "Último";
+            btnUltimo.UseVisualStyleBackColor = true;
+            btnUltimo.Click += btnUltimo_Click;
+            // 
+            // btnPrimero
+            // 
+            btnPrimero.Location = new Point(27, 124);
+            btnPrimero.Name = "btnPrimero";
+            btnPrimero.Size = new Size(75, 23);
+            btnPrimero.TabIndex = 12;
+            btnPrimero.Text = "Primero";
+            btnPrimero.UseVisualStyleBackColor = true;
+            btnPrimero.Click += btnPrimero_Click;
+            // 
             // frmButonera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(350, 299);
+            ClientSize = new Size(376, 299);
+            Controls.Add(btnPrimero);
+            Controls.Add(btnUltimo);
             Controls.Add(lblNom);
             Controls.Add(cboNombre);
-            Controls.Add(lblResultado);
             Controls.Add(btnAtras);
             Controls.Add(btnSiguiente);
             Controls.Add(lblDatos);
@@ -114,8 +127,9 @@
         private Label lblDatos;
         private Button btnSiguiente;
         private Button btnAtras;
-        private Label lblResultado;
         private ComboBox cboNombre;
         private Label lblNom;
+        private Button btnUltimo;
+        private Button btnPrimero;
     }
 }

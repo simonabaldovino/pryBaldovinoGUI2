@@ -33,32 +33,53 @@ namespace pryBaldovinoGUI
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
+            indice++;
 
-            if (vecNombres.Length <= 3)
-            { 
-                indice++;
-                lblDatos.Text = vecNombres[indice];
-            }
-            else
+            if (vecNombres.Length > indice)
             {
-                btnSiguiente.Enabled = false;
+                lblDatos.Text = vecNombres[indice];
+
+                if ((indice + 1) == vecNombres.Length)
+                {
+                    btnSiguiente.Enabled = false;
+                }
+
+                if (indice > 0)
+                {
+                    btnAtras.Enabled = true;
+                }
             }
-          
+
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            indice--;
-            if(vecNombres.Length >= 3)
-            { 
+            if (indice > 0)
+            {
+                indice--;
+
                 lblDatos.Text = vecNombres[indice];
 
+                if (indice == 0)
+                {
+                    btnAtras.Enabled = false;
+                }
+
+                btnSiguiente.Enabled = true;
             }
-            else 
-            {
-                btnSiguiente.Enabled = false;
-                MessageBox.Show("El botón ya no se puede usar mas.");
+
+
+
         }
-            }
+
+        private void btnPrimero_Click(object sender, EventArgs e)
+        {
+            lblDatos.Text = vecNombres[0];
+        }
+
+        private void btnUltimo_Click(object sender, EventArgs e)
+        {
+            lblDatos.Text = vecNombres[vecNombres.Length - 1];
+        }
     }
 }
