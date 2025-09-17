@@ -17,14 +17,56 @@ namespace pryBaldovinoGUI
             InitializeComponent();
         }
 
-        string[] vecNombres = new string[3];
+        string[] vecNombres = new string[4];
 
         private void frmButonera_Load(object sender, EventArgs e)
         {
             vecNombres[0] = "Luka";
             vecNombres[1] = "Josefina";
             vecNombres[2] = "Pablo";
-            vecNombres[3] = "Analia"; 
+            vecNombres[3] = "Analia";
+        }
+
+        int indice = 0;
+
+        private void lblSiguiente_Click(object sender, EventArgs e)
+        {
+            indice++;
+            if (vecNombres.Length > indice)
+            {
+                lblDatos.Text = vecNombres[indice];
+
+                if ((indice + 1) == vecNombres.Length)
+                {
+                    btnSiguiente.Enabled = false;
+                }
+                if (indice > 0)
+                {
+                    btnAtras.Enabled = true;
+                }
+
+            }
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            if (indice > 0)
+            {
+                indice--;
+                lblDatos.Text = vecNombres[indice];
+
+                if (indice == 0)
+                {
+                    btnAtras.Enabled = false;
+                }
+                btnSiguiente.Enabled = true;
+            }
+        }
+
+        private void lblPrimero_Click(object sender, EventArgs e)
+        {
+            lblDatos.Text = vecNombres[0];
         }
     }
+
 }
