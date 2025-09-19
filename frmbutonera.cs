@@ -17,7 +17,7 @@ namespace pryBaldovinoGUI
             InitializeComponent();
         }
 
-        string[] vecNombres = new string[3];
+        public string[] vecNombres = new string[3];
         int indice = 0;
 
         private void frmButonera_Load(object sender, EventArgs e)

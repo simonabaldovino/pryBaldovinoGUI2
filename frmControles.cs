@@ -16,5 +16,13 @@ namespace pryBaldovinoGUI
         {
             InitializeComponent();
         }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            frmButonera ventana = new frmButonera();
+           
+            ventana.Show();
+            //ventana.vecNombres;
+        }
     }
 }
