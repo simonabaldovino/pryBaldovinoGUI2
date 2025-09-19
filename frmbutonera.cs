@@ -67,9 +67,6 @@ namespace pryBaldovinoGUI
 
                 btnSiguiente.Enabled = true;
             }
-
-
-
         }
 
         private void btnPrimero_Click(object sender, EventArgs e)

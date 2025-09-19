@@ -39,7 +39,6 @@
             btnAbrir.TabIndex = 0;
             btnAbrir.Text = "Abrir butonera";
             btnAbrir.UseVisualStyleBackColor = true;
-            btnAbrir.Click += btnAbrir_Click;
             // 
             // frmControles
             // 

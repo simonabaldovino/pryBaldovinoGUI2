@@ -32,7 +32,7 @@
             btnSiguiente = new Button();
             btnAtras = new Button();
             cboNombre = new ComboBox();
-            lblNom = new Label();
+            lblNombres = new Label();
             btnUltimo = new Button();
             btnPrimero = new Button();
             SuspendLayout();
@@ -69,19 +69,20 @@
             // cboNombre
             // 
             cboNombre.FormattingEnabled = true;
+            cboNombre.Items.AddRange(new object[] { "Luka", "Josefina", "Pablo " });
             cboNombre.Location = new Point(138, 253);
             cboNombre.Name = "cboNombre";
             cboNombre.Size = new Size(138, 23);
             cboNombre.TabIndex = 9;
             // 
-            // lblNom
+            // lblNombres
             // 
-            lblNom.AutoSize = true;
-            lblNom.Location = new Point(32, 256);
-            lblNom.Name = "lblNom";
-            lblNom.Size = new Size(38, 15);
-            lblNom.TabIndex = 10;
-            lblNom.Text = "label1";
+            lblNombres.AutoSize = true;
+            lblNombres.Location = new Point(32, 256);
+            lblNombres.Name = "lblNombres";
+            lblNombres.Size = new Size(56, 15);
+            lblNombres.TabIndex = 10;
+            lblNombres.Text = "Nombres";
             // 
             // btnUltimo
             // 
@@ -110,7 +111,7 @@
             ClientSize = new Size(376, 299);
             Controls.Add(btnPrimero);
             Controls.Add(btnUltimo);
-            Controls.Add(lblNom);
+            Controls.Add(lblNombres);
             Controls.Add(cboNombre);
             Controls.Add(btnAtras);
             Controls.Add(btnSiguiente);
@@ -128,7 +129,7 @@
         private Button btnSiguiente;
         private Button btnAtras;
         private ComboBox cboNombre;
-        private Label lblNom;
+        private Label lblNombres;
         private Button btnUltimo;
         private Button btnPrimero;
     }
