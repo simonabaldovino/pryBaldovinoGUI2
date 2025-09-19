@@ -77,9 +77,5 @@ namespace pryBaldovinoGUI
             lblDatos.Text = vecNombres[0];
         }
 
-        private void btnUltimo_Click(object sender, EventArgs e)
-        {
-            lblDatos.Text = vecNombres[vecNombres.Length - 1];
-        }
     }
 }
