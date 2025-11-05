@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmControles));
             btnAbrir = new Button();
             SuspendLayout();
             // 
             // btnAbrir
             // 
-            btnAbrir.Location = new Point(35, 27);
+            btnAbrir.Location = new Point(40, 36);
+            btnAbrir.Margin = new Padding(3, 4, 3, 4);
             btnAbrir.Name = "btnAbrir";
-            btnAbrir.Size = new Size(122, 29);
+            btnAbrir.Size = new Size(139, 39);
             btnAbrir.TabIndex = 0;
             btnAbrir.Text = "Abrir butonera";
             btnAbrir.UseVisualStyleBackColor = true;
@@ -43,11 +45,16 @@
             // 
             // frmControles
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(484, 461);
+            ClientSize = new Size(553, 615);
             Controls.Add(btnAbrir);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "frmControles";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmControles";
             ResumeLayout(false);
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmButonera));
             lblDatos = new Label();
             btnSiguiente = new Button();
             btnAtras = new Button();
@@ -41,16 +42,17 @@
             // 
             lblDatos.AutoSize = true;
             lblDatos.BorderStyle = BorderStyle.Fixed3D;
-            lblDatos.Location = new Point(157, 61);
+            lblDatos.Location = new Point(179, 81);
             lblDatos.Name = "lblDatos";
-            lblDatos.Size = new Size(2, 17);
+            lblDatos.Size = new Size(2, 22);
             lblDatos.TabIndex = 0;
             // 
             // btnSiguiente
             // 
-            btnSiguiente.Location = new Point(189, 124);
+            btnSiguiente.Location = new Point(216, 165);
+            btnSiguiente.Margin = new Padding(3, 4, 3, 4);
             btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(75, 23);
+            btnSiguiente.Size = new Size(86, 31);
             btnSiguiente.TabIndex = 5;
             btnSiguiente.Text = "Siguiente";
             btnSiguiente.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // 
             // btnAtras
             // 
-            btnAtras.Location = new Point(108, 124);
+            btnAtras.Location = new Point(123, 165);
+            btnAtras.Margin = new Padding(3, 4, 3, 4);
             btnAtras.Name = "btnAtras";
-            btnAtras.Size = new Size(75, 23);
+            btnAtras.Size = new Size(86, 31);
             btnAtras.TabIndex = 6;
             btnAtras.Text = "Atras";
             btnAtras.UseVisualStyleBackColor = true;
@@ -70,25 +73,27 @@
             // 
             cboNombre.FormattingEnabled = true;
             cboNombre.Items.AddRange(new object[] { "Luka", "Josefina", "Pablo " });
-            cboNombre.Location = new Point(138, 253);
+            cboNombre.Location = new Point(158, 337);
+            cboNombre.Margin = new Padding(3, 4, 3, 4);
             cboNombre.Name = "cboNombre";
-            cboNombre.Size = new Size(138, 23);
+            cboNombre.Size = new Size(157, 28);
             cboNombre.TabIndex = 9;
             // 
             // lblNombres
             // 
             lblNombres.AutoSize = true;
-            lblNombres.Location = new Point(32, 256);
+            lblNombres.Location = new Point(37, 341);
             lblNombres.Name = "lblNombres";
-            lblNombres.Size = new Size(56, 15);
+            lblNombres.Size = new Size(70, 20);
             lblNombres.TabIndex = 10;
             lblNombres.Text = "Nombres";
             // 
             // btnUltimo
             // 
-            btnUltimo.Location = new Point(270, 124);
+            btnUltimo.Location = new Point(309, 165);
+            btnUltimo.Margin = new Padding(3, 4, 3, 4);
             btnUltimo.Name = "btnUltimo";
-            btnUltimo.Size = new Size(75, 23);
+            btnUltimo.Size = new Size(86, 31);
             btnUltimo.TabIndex = 11;
             btnUltimo.Text = "Último";
             btnUltimo.UseVisualStyleBackColor = true;
@@ -96,9 +101,10 @@
             // 
             // btnPrimero
             // 
-            btnPrimero.Location = new Point(27, 124);
+            btnPrimero.Location = new Point(31, 165);
+            btnPrimero.Margin = new Padding(3, 4, 3, 4);
             btnPrimero.Name = "btnPrimero";
-            btnPrimero.Size = new Size(75, 23);
+            btnPrimero.Size = new Size(86, 31);
             btnPrimero.TabIndex = 12;
             btnPrimero.Text = "Primero";
             btnPrimero.UseVisualStyleBackColor = true;
@@ -106,9 +112,9 @@
             // 
             // frmButonera
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(376, 299);
+            ClientSize = new Size(430, 399);
             Controls.Add(btnPrimero);
             Controls.Add(btnUltimo);
             Controls.Add(lblNombres);
@@ -116,7 +122,10 @@
             Controls.Add(btnAtras);
             Controls.Add(btnSiguiente);
             Controls.Add(lblDatos);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmButonera";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmbutonera";
             Load += frmButonera_Load;
             ResumeLayout(false);
